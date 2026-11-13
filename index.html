@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>プロジェクト管理</title>
+<style>
+  :root { --ink:#1f2937; --sub:#6b7280; --line:#e5e7eb; --accent:#b91c1c; --bg:#f7f5f0; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;
+         background:var(--bg); color:var(--ink); -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:880px; margin:0 auto; padding:24px 16px 48px; }
+  header h1 { font-size:22px; margin:0 0 4px; letter-spacing:.02em; }
+  header p { margin:0; color:var(--sub); font-size:13px; }
+  h2 { font-size:15px; margin:28px 0 12px; padding-bottom:6px; border-bottom:2px solid var(--ink); letter-spacing:.05em; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:12px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:10px; padding:14px 16px; }
+  .card.attention { border-color:var(--accent); border-width:1.5px; }
+  .card-head { display:flex; justify-content:space-between; align-items:flex-start; gap:8px; }
+  .card h3 { font-size:15px; margin:0 0 8px; line-height:1.4; }
+  .stamp { flex:none; color:var(--accent); border:1.5px solid var(--accent); border-radius:4px;
+           font-size:11px; font-weight:700; padding:1px 6px; transform:rotate(3deg); }
+  .card p { margin:4px 0; font-size:13px; line-height:1.55; }
+  .label { display:inline-block; min-width:76px; color:var(--sub); font-size:11px; font-weight:700; }
+  footer { margin-top:32px; color:var(--sub); font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>プロジェクト管理</h1>
+  <p>台帳の最終更新: 2026-11-13 ／ このページの生成: 2026-11-13 10:15（読み取り専用スナップショット）</p>
+</header>
+<h2>あなたの手が必要なもの（4件）</h2>
+<div class="grid">
+<article class="card attention">
+  <div class="card-head"><h3>kabu（株・検証のみ）</h3><span class="stamp">要対応</span></div>
+  <p class="status"><span class="label">状態</span>要対応</p>
+  <p><span class="label">次の一手</span>config のモデルを gpt-5.6-luna に変更（編集済みファイルは準備完了）</p>
+  <p><span class="label">期限・ブロック</span>11/14(土) 09:00 週次実行。ファイル書き込みの承認待ち</p>
+</article>
+<article class="card attention">
+  <div class="card-head"><h3>Kura Works（湘南HP営業）</h3><span class="stamp">要対応</span></div>
+  <p class="status"><span class="label">状態</span>営業中</p>
+  <p><span class="label">次の一手</span>サンプル11件の最終確認 → v4 DM送信</p>
+  <p><span class="label">期限・ブロック</span>ユーザーのQC待ち。第2弾4件＋新規7件（v2公開済み）</p>
+</article>
+<article class="card attention">
+  <div class="card-head"><h3>Chatwork 接続</h3><span class="stamp">要対応</span></div>
+  <p class="status"><span class="label">状態</span>設定途中</p>
+  <p><span class="label">次の一手</span>APIトークンの登録</p>
+  <p><span class="label">期限・ブロック</span>ユーザーの入力待ち（安全な入力ページを送付済み）</p>
+</article>
+<article class="card attention">
+  <div class="card-head"><h3>Apps Script 整理</h3><span class="stamp">要対応</span></div>
+  <p class="status"><span class="label">状態</span>案内済み</p>
+  <p><span class="label">次の一手</span>不要トリガー3件の削除</p>
+  <p><span class="label">期限・ブロック</span>ユーザー操作（手順を案内済み）</p>
+</article>
+</div>
+<h2>全プロジェクト（8件）</h2>
+<div class="grid">
+<article class="card">
+  <div class="card-head"><h3>Nobiru（eBay輸出）</h3></div>
+  <p class="status"><span class="label">状態</span>稼働中</p>
+  <p><span class="label">次の一手</span>日々の発送対応（配送・発送チェックが毎朝監視）</p>
+  <p><span class="label">期限・ブロック</span>発送期限 11/26–27 の注文12件</p>
+</article>
+<article class="card attention">
+  <div class="card-head"><h3>kabu（株・検証のみ）</h3><span class="stamp">要対応</span></div>
+  <p class="status"><span class="label">状態</span>要対応</p>
+  <p><span class="label">次の一手</span>config のモデルを gpt-5.6-luna に変更（編集済みファイルは準備完了）</p>
+  <p><span class="label">期限・ブロック</span>11/14(土) 09:00 週次実行。ファイル書き込みの承認待ち</p>
+</article>
+<article class="card attention">
+  <div class="card-head"><h3>Kura Works（湘南HP営業）</h3><span class="stamp">要対応</span></div>
+  <p class="status"><span class="label">状態</span>営業中</p>
+  <p><span class="label">次の一手</span>サンプル11件の最終確認 → v4 DM送信</p>
+  <p><span class="label">期限・ブロック</span>ユーザーのQC待ち。第2弾4件＋新規7件（v2公開済み）</p>
+</article>
+<article class="card">
+  <div class="card-head"><h3>懸賞プロジェクト</h3></div>
+  <p class="status"><span class="label">状態</span>開始（11/13）</p>
+  <p><span class="label">次の一手</span>締切間近の応募判断と主軸サイトの確定</p>
+  <p><span class="label">期限・ブロック</span>11/15締切が3件。主軸候補: チャンスイット＋懸賞当確</p>
+</article>
+<article class="card">
+  <div class="card-head"><h3>note アウトプット</h3></div>
+  <p class="status"><span class="label">状態</span>開始（11/13）</p>
+  <p><span class="label">次の一手</span>テーマ（柱）の確定と1本目の原稿</p>
+  <p><span class="label">期限・ブロック</span>下書き→ユーザー確認→公開の流れ</p>
+</article>
+<article class="card">
+  <div class="card-head"><h3>AI使用量ウィジェット</h3></div>
+  <p class="status"><span class="label">状態</span>運用中</p>
+  <p><span class="label">次の一手</span>なし（3時間ごとに自動更新）</p>
+  <p><span class="label">期限・ブロック</span>iPhoneへの設置はユーザー作業</p>
+</article>
+<article class="card attention">
+  <div class="card-head"><h3>Chatwork 接続</h3><span class="stamp">要対応</span></div>
+  <p class="status"><span class="label">状態</span>設定途中</p>
+  <p><span class="label">次の一手</span>APIトークンの登録</p>
+  <p><span class="label">期限・ブロック</span>ユーザーの入力待ち（安全な入力ページを送付済み）</p>
+</article>
+<article class="card attention">
+  <div class="card-head"><h3>Apps Script 整理</h3><span class="stamp">要対応</span></div>
+  <p class="status"><span class="label">状態</span>案内済み</p>
+  <p><span class="label">次の一手</span>不要トリガー3件の削除</p>
+  <p><span class="label">期限・ブロック</span>ユーザー操作（手順を案内済み）</p>
+</article>
+</div>
+<footer>編集は Muse のダッシュボード（Space「プロジェクト管理」）で。台帳: workspace/projects/PROJECTS.md</footer>
+</div>
+</body>
+</html>
